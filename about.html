@@ -23,115 +23,122 @@
   </div>
 </header>
 
+<!-- PAGE HERO -->
+<section style="padding:80px 0 64px; background:var(--bg2); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <span class="chip" style="margin-bottom:20px;">Developer</span>
+    <h1 style="margin-bottom:16px;">開発者について</h1>
+    <p style="max-width:520px;">このアプリを作った人間のことを、少し知ってもらえたら嬉しいです。</p>
+  </div>
+</section>
+
+<!-- PROFILE -->
 <section class="section">
   <div class="container" style="max-width:800px;">
 
-    <!-- プロフィール -->
-    <div style="margin-bottom:56px;">
-      <span class="chip" style="margin-bottom:16px;">About</span>
-      <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;">
-        <div style="
-          width:96px;height:96px;border-radius:50%;flex-shrink:0;
-          background:linear-gradient(135deg,#6366f1,#a78bfa,#ec4899);
-          display:flex;align-items:center;justify-content:center;
-          font-size:44px;box-shadow:0 8px 32px rgba(99,102,241,.4);
-        ">👨‍💻</div>
-        <div style="flex:1;min-width:200px;">
-          <h1 style="font-size:clamp(24px,4vw,38px);margin-bottom:6px;">個人開発者</h1>
-          <p style="font-size:15px;margin-bottom:16px;">Improve Your Life 設計・開発・運営</p>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;">
-            <span class="chip">React</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">AWS</span>
-            <span class="chip purple">個人開発</span>
-            <span class="chip green">運用中</span>
-          </div>
+    <!-- Profile Card -->
+    <div style="display:grid; grid-template-columns:1fr 2fr; gap:48px; align-items:start; margin-bottom:80px;">
+      <!-- Avatar -->
+      <div style="text-align:center;">
+        <div style="width:120px; height:120px; border-radius:50%; background:var(--surface3); border:1px solid var(--border); margin:0 auto 20px; display:flex; align-items:center; justify-content:center; font-size:48px;">
+          👨‍💻
         </div>
+        <!-- SNS -->
+        <div style="display:flex; flex-direction:column; gap:10px; align-items:center;">
+          <a href="https://www.instagram.com/kbv.log" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex; align-items:center; gap:8px; font-size:12px; color:var(--muted); border:1px solid var(--border); padding:8px 18px; letter-spacing:.06em; transition:all .2s;"
+             onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+             onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @kbv.log
+          </a>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div>
+        <div style="margin-bottom:8px;">
+          <span style="font-size:11px; color:var(--gold); letter-spacing:.12em; text-transform:uppercase;">Profile</span>
+        </div>
+        <h2 style="font-size:clamp(22px,3vw,32px); margin-bottom:20px; font-weight:400;">都内在住 ITエンジニア</h2>
+
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px;">
+          <span class="tech-pill">30歳</span>
+          <span class="tech-pill">東京</span>
+          <span class="tech-pill">ITエンジニア</span>
+          <span class="tech-pill">元・フルインセンティブ営業</span>
+        </div>
+
+        <p style="line-height:2; margin-bottom:16px;">
+          新卒でフルインセンティブ制の営業職に就き、結果をすべて自分の行動量と質で決める環境を経験。
+          その後、ITエンジニアへ転身。「仕組みで人生を変える」という考え方は、営業時代に培ったものです。
+        </p>
+        <p style="line-height:2;">
+          コードを書くことも、習慣をデザインすることも、本質は同じだと思っています——
+          <em style="color:var(--text); font-style:normal;">小さな積み重ねが、大きな差をつくる。</em>
+        </p>
       </div>
     </div>
 
-    <!-- このアプリを作った理由 -->
-    <div class="card" style="margin-bottom:20px;">
-      <h2 style="font-size:20px;margin-bottom:16px;">🤔 このアプリを作った理由</h2>
-      <p style="margin-bottom:12px;">「習慣を続けるためのアプリがほしい」という純粋な動機から始まりました。既存のアプリは機能が少なすぎたり、逆に複雑すぎてストレスになったり。自分が本当に使いたいものを作ろうと決心しました。</p>
-      <p style="margin-bottom:12px;">筋トレ・プログラミング・読書など複数の習慣を持つ人が、一つのアプリで全部管理できる。そして毎日開きたくなるような、ゲームのような楽しさを持たせたい。そんな思いで機能を追加し続けています。</p>
-      <p>実際に自分でも毎日使っているので、使いやすさへのこだわりは誰よりも強いつもりです。</p>
-    </div>
+    <!-- Divider -->
+    <div style="border-top:1px solid var(--border); margin-bottom:80px;"></div>
 
-    <!-- 技術スタック -->
-    <div class="card" style="margin-bottom:20px;">
-      <h2 style="font-size:20px;margin-bottom:20px;">🛠️ 技術スタック</h2>
-      <div class="grid grid-2" style="gap:20px;">
-        <div>
-          <h3 style="font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.04em;margin-bottom:14px;">FRONTEND</h3>
-          <div style="display:flex;flex-direction:column;gap:8px;">
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">⚛️ React 18 + Vite</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">🔗 React Router v6</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">📡 Axios</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">📅 date-fns</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">🚀 Vercel（ホスティング）</span>
-            </div>
+    <!-- Story -->
+    <div style="margin-bottom:80px;">
+      <div style="margin-bottom:8px;">
+        <span style="font-size:11px; color:var(--gold); letter-spacing:.12em; text-transform:uppercase;">Story</span>
+      </div>
+      <h2 style="font-size:clamp(20px,3vw,28px); margin-bottom:36px; font-weight:400;">このアプリを作った理由</h2>
+
+      <div style="display:flex; flex-direction:column; gap:0;">
+
+        <div style="display:grid; grid-template-columns:48px 1fr; gap:24px; padding-bottom:40px; position:relative;">
+          <div style="display:flex; flex-direction:column; align-items:center;">
+            <div style="width:36px; height:36px; border:1px solid var(--border2); display:flex; align-items:center; justify-content:center; font-size:14px; font-family:'Cormorant Garamond',serif; color:var(--gold); flex-shrink:0;">01</div>
+            <div style="width:1px; flex:1; background:var(--border); margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:6px;">
+            <h3 style="font-size:16px; margin-bottom:10px; font-family:'Noto Sans JP',sans-serif; font-weight:500;">習慣化が、どうしても続かなかった</h3>
+            <p style="line-height:2;">運動・読書・早起き——何度試しても3日と続かない。アプリを探してみたが、機能が多すぎてかえって億劫になってしまう。シンプルに「今日やったかどうか」だけを記録したかった。</p>
           </div>
         </div>
-        <div>
-          <h3 style="font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.04em;margin-bottom:14px;">BACKEND</h3>
-          <div style="display:flex;flex-direction:column;gap:8px;">
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">🟢 Node.js + Express</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">☁️ AWS DynamoDB</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">🤖 Anthropic Claude API</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">💬 LINE Messaging API</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <span style="color:var(--accent2);font-size:12px;">▸</span>
-              <span class="tech-pill">🚂 Railway（ホスティング）</span>
-            </div>
+
+        <div style="display:grid; grid-template-columns:48px 1fr; gap:24px; padding-bottom:40px; position:relative;">
+          <div style="display:flex; flex-direction:column; align-items:center;">
+            <div style="width:36px; height:36px; border:1px solid var(--border2); display:flex; align-items:center; justify-content:center; font-size:14px; font-family:'Cormorant Garamond',serif; color:var(--gold); flex-shrink:0;">02</div>
+            <div style="width:1px; flex:1; background:var(--border); margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:6px;">
+            <h3 style="font-size:16px; margin-bottom:10px; font-family:'Noto Sans JP',sans-serif; font-weight:500;">ならば、自分で作ろう</h3>
+            <p style="line-height:2;">エンジニアとして日々コードを書く中で「自分が本当に使いたいものを自分で作る」という選択肢があることに気づいた。まずは自分用として、必要最低限の機能だけを実装した。</p>
           </div>
         </div>
+
+        <div style="display:grid; grid-template-columns:48px 1fr; gap:24px;">
+          <div style="display:flex; flex-direction:column; align-items:center;">
+            <div style="width:36px; height:36px; border:1px solid var(--border2); display:flex; align-items:center; justify-content:center; font-size:14px; font-family:'Cormorant Garamond',serif; color:var(--gold); flex-shrink:0;">03</div>
+          </div>
+          <div style="padding-top:6px;">
+            <h3 style="font-size:16px; margin-bottom:10px; font-family:'Noto Sans JP',sans-serif; font-weight:500;">同じ悩みを持つ人へ、無料で届けたい</h3>
+            <p style="line-height:2;">使い続けていくうちに、習慣が少しずつ定着してきた。この体験を、同じように「続けられない」と感じている人に届けたくて、公開することにした。完全無料にこだわっているのもそのためです。</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <!-- アップデート方針 -->
-    <div class="card" style="margin-bottom:20px;">
-      <h2 style="font-size:20px;margin-bottom:14px;">🔄 アップデート方針</h2>
-      <p>ユーザーからのフィードバックを最優先に機能改善を行っています。「こんな機能があれば」というご意見は<a href="contact.html">お問い合わせ</a>からお気軽にどうぞ。実際に多くの機能がユーザーの声から生まれています。</p>
-    </div>
+    <!-- Divider -->
+    <div style="border-top:1px solid var(--border); margin-bottom:80px;"></div>
 
     <!-- CTA -->
-    <div style="
-      text-align:center;padding:48px 32px;margin-top:12px;
-      background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(167,139,250,.07));
-      border-radius:var(--radius);border:1px solid var(--border);
-    ">
-      <p style="font-size:22px;font-weight:800;color:var(--text);margin-bottom:8px;">一緒に習慣を続けましょう</p>
-      <p style="margin-bottom:28px;">コツコツが勝つコツ。</p>
+    <div style="text-align:center; padding:48px 32px; background:var(--surface2); border:1px solid var(--border);">
+      <span style="font-size:11px; color:var(--gold); letter-spacing:.12em; text-transform:uppercase; display:block; margin-bottom:16px;">App</span>
+      <h2 style="font-size:clamp(20px,3vw,28px); margin-bottom:14px; font-weight:400;">まずは、一つの習慣から。</h2>
+      <p style="margin-bottom:32px; max-width:400px; margin-left:auto; margin-right:auto; margin-bottom:32px;">難しく考えなくていい。今日できたことを、ひとつ記録するだけでいい。</p>
       <a href="https://daily-tracker-ecru.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-        ▶&nbsp; アプリを始める
+        アプリを開く →
       </a>
+      <p style="font-size:12px; margin-top:16px; color:var(--muted2);">完全無料 · 登録30秒</p>
     </div>
 
   </div>
