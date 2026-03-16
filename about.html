@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開発者について — Improve Your Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="nav">
+    <a href="index.html" class="nav-logo">✨ Improve Your Life</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">ホーム</a>
+      <a href="about.html" class="active">開発者</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="https://daily-tracker-ecru.vercel.app" class="nav-cta" target="_blank" rel="noopener noreferrer">アプリを開く →</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:800px;">
+
+    <!-- プロフィール -->
+    <div style="margin-bottom:56px;">
+      <span class="chip" style="margin-bottom:16px;">About</span>
+      <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;">
+        <div style="
+          width:96px;height:96px;border-radius:50%;flex-shrink:0;
+          background:linear-gradient(135deg,#6366f1,#a78bfa,#ec4899);
+          display:flex;align-items:center;justify-content:center;
+          font-size:44px;box-shadow:0 8px 32px rgba(99,102,241,.4);
+        ">👨‍💻</div>
+        <div style="flex:1;min-width:200px;">
+          <h1 style="font-size:clamp(24px,4vw,38px);margin-bottom:6px;">個人開発者</h1>
+          <p style="font-size:15px;margin-bottom:16px;">Improve Your Life 設計・開発・運営</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">AWS</span>
+            <span class="chip purple">個人開発</span>
+            <span class="chip green">運用中</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- このアプリを作った理由 -->
+    <div class="card" style="margin-bottom:20px;">
+      <h2 style="font-size:20px;margin-bottom:16px;">🤔 このアプリを作った理由</h2>
+      <p style="margin-bottom:12px;">「習慣を続けるためのアプリがほしい」という純粋な動機から始まりました。既存のアプリは機能が少なすぎたり、逆に複雑すぎてストレスになったり。自分が本当に使いたいものを作ろうと決心しました。</p>
+      <p style="margin-bottom:12px;">筋トレ・プログラミング・読書など複数の習慣を持つ人が、一つのアプリで全部管理できる。そして毎日開きたくなるような、ゲームのような楽しさを持たせたい。そんな思いで機能を追加し続けています。</p>
+      <p>実際に自分でも毎日使っているので、使いやすさへのこだわりは誰よりも強いつもりです。</p>
+    </div>
+
+    <!-- 技術スタック -->
+    <div class="card" style="margin-bottom:20px;">
+      <h2 style="font-size:20px;margin-bottom:20px;">🛠️ 技術スタック</h2>
+      <div class="grid grid-2" style="gap:20px;">
+        <div>
+          <h3 style="font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.04em;margin-bottom:14px;">FRONTEND</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">⚛️ React 18 + Vite</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">🔗 React Router v6</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">📡 Axios</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">📅 date-fns</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">🚀 Vercel（ホスティング）</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.04em;margin-bottom:14px;">BACKEND</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">🟢 Node.js + Express</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">☁️ AWS DynamoDB</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">🤖 Anthropic Claude API</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">💬 LINE Messaging API</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span style="color:var(--accent2);font-size:12px;">▸</span>
+              <span class="tech-pill">🚂 Railway（ホスティング）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- アップデート方針 -->
+    <div class="card" style="margin-bottom:20px;">
+      <h2 style="font-size:20px;margin-bottom:14px;">🔄 アップデート方針</h2>
+      <p>ユーザーからのフィードバックを最優先に機能改善を行っています。「こんな機能があれば」というご意見は<a href="contact.html">お問い合わせ</a>からお気軽にどうぞ。実際に多くの機能がユーザーの声から生まれています。</p>
+    </div>
+
+    <!-- CTA -->
+    <div style="
+      text-align:center;padding:48px 32px;margin-top:12px;
+      background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(167,139,250,.07));
+      border-radius:var(--radius);border:1px solid var(--border);
+    ">
+      <p style="font-size:22px;font-weight:800;color:var(--text);margin-bottom:8px;">一緒に習慣を続けましょう</p>
+      <p style="margin-bottom:28px;">コツコツが勝つコツ。</p>
+      <a href="https://daily-tracker-ecru.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        ▶&nbsp; アプリを始める
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">✨ Improve Your Life</div>
+        <p>毎日の習慣で人生を変える。<br>無料の習慣トラッカーアプリ。</p>
+      </div>
+      <div class="footer-col"><h4>ページ</h4><ul><li><a href="index.html">ホーム</a></li><li><a href="about.html">開発者</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></div>
+      <div class="footer-col"><h4>法的情報</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="terms.html">利用規約</a></li></ul></div>
+      <div class="footer-col"><h4>アプリ</h4><ul><li><a href="https://daily-tracker-ecru.vercel.app" target="_blank" rel="noopener">アプリを開く →</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Improve Your Life. All rights reserved.</p>
+      <p><a href="privacy.html">プライバシーポリシー</a> · <a href="terms.html">利用規約</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navMenu').classList.toggle('open'));</script>
+</body>
+</html>

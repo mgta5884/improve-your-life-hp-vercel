@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ — Improve Your Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="nav">
+    <a href="index.html" class="nav-logo">✨ Improve Your Life</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">開発者</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html" class="active">お問い合わせ</a>
+      <a href="https://daily-tracker-ecru.vercel.app" class="nav-cta" target="_blank" rel="noopener noreferrer">アプリを開く →</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:720px;">
+    <div style="margin-bottom:48px;">
+      <span class="chip" style="margin-bottom:14px;">Contact</span>
+      <h1 style="font-size:clamp(26px,4vw,44px);margin-bottom:12px;">お問い合わせ</h1>
+      <p>バグ報告・機能リクエスト・アカウント削除などお気軽にどうぞ。</p>
+    </div>
+
+    <!-- メインカード -->
+    <div class="card" style="margin-bottom:20px;text-align:center;padding:48px 32px;">
+      <div style="font-size:48px;margin-bottom:16px;">📝</div>
+      <h2 style="font-size:22px;margin-bottom:10px;">お問い合わせフォーム</h2>
+      <p style="margin-bottom:28px;">Googleフォームからご連絡ください。通常2〜3営業日以内に返信します。</p>
+      <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+         class="btn btn-primary" target="_blank" rel="noopener noreferrer" id="contactFormBtn">
+        📝&nbsp; フォームを開く
+      </a>
+      <p style="font-size:12px;margin-top:14px;">※ Googleアカウントなしでも送信できます</p>
+    </div>
+
+    <!-- お問い合わせ種別 -->
+    <div class="contact-grid" style="margin-bottom:40px;">
+      <div class="contact-card">
+        <div style="font-size:28px;margin-bottom:10px;">🐛</div>
+        <h3 style="margin-bottom:8px;">バグ・不具合報告</h3>
+        <p style="font-size:13.5px;">発生状況・手順・ブラウザの種類を添えてご報告ください。スクリーンショットがあると対応が早くなります。</p>
+      </div>
+      <div class="contact-card">
+        <div style="font-size:28px;margin-bottom:10px;">💡</div>
+        <h3 style="margin-bottom:8px;">機能リクエスト</h3>
+        <p style="font-size:13.5px;">ご要望は積極的に検討します。「こんな機能があれば」という具体的なアイデアを教えてください。</p>
+      </div>
+      <div class="contact-card">
+        <div style="font-size:28px;margin-bottom:10px;">🗑️</div>
+        <h3 style="margin-bottom:8px;">アカウント削除</h3>
+        <p style="font-size:13.5px;">ユーザー名と「アカウント削除希望」とご記入ください。確認後、速やかに対応いたします。</p>
+      </div>
+      <div class="contact-card">
+        <div style="font-size:28px;margin-bottom:10px;">💬</div>
+        <h3 style="margin-bottom:8px;">その他のご質問</h3>
+        <p style="font-size:13.5px;">プライバシーに関するご質問・使い方のご相談など、なんでもお気軽にどうぞ。</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 style="font-size:20px;margin-bottom:20px;border-top:1px solid var(--border);padding-top:40px;">よくある質問</h2>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <details class="faq-item">
+        <summary>パスワードを忘れてしまいました</summary>
+        <p><a href="https://daily-tracker-ecru.vercel.app" target="_blank">アプリのログイン画面</a>から「パスワードを忘れた」をクリックしてください。登録メールアドレス宛にリセットリンクが届きます。</p>
+      </details>
+      <details class="faq-item">
+        <summary>無料で使えますか？</summary>
+        <p>はい、すべての機能を完全無料でご利用いただけます。クレジットカードの登録も不要です。</p>
+      </details>
+      <details class="faq-item">
+        <summary>LINE連携の設定方法を教えてください</summary>
+        <p>アプリのプロフィールページ → 「LINE連携」から6桁のコードを取得し、公式LINEアカウントに送信してください。詳しくは使い方ガイドをご覧ください。</p>
+      </details>
+      <details class="faq-item">
+        <summary>データをエクスポートできますか？</summary>
+        <p>現在のバージョンではデータエクスポート機能はありません。ご要望が多ければ今後実装を検討します。</p>
+      </details>
+      <details class="faq-item">
+        <summary>スマートフォンアプリはありますか？</summary>
+        <p>現在はWebアプリのみです。スマートフォンのブラウザから快適にご利用いただけます。ホーム画面に追加するとアプリのように使えます。</p>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">✨ Improve Your Life</div>
+        <p>毎日の習慣で人生を変える。<br>無料の習慣トラッカーアプリ。</p>
+      </div>
+      <div class="footer-col"><h4>ページ</h4><ul><li><a href="index.html">ホーム</a></li><li><a href="about.html">開発者</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></div>
+      <div class="footer-col"><h4>法的情報</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="terms.html">利用規約</a></li></ul></div>
+      <div class="footer-col"><h4>アプリ</h4><ul><li><a href="https://daily-tracker-ecru.vercel.app" target="_blank" rel="noopener">アプリを開く →</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Improve Your Life. All rights reserved.</p>
+      <p><a href="privacy.html">プライバシーポリシー</a> · <a href="terms.html">利用規約</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navMenu').classList.toggle('open'));</script>
+</body>
+</html>

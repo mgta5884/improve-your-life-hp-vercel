@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — Improve Your Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="nav">
+    <a href="index.html" class="nav-logo">✨ Improve Your Life</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">開発者</a>
+      <a href="privacy.html" class="active">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="https://daily-tracker-ecru.vercel.app" class="nav-cta" target="_blank" rel="noopener noreferrer">アプリを開く →</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-hero">
+    <span class="chip" style="margin-bottom:14px;">Privacy Policy</span>
+    <h1>プライバシーポリシー</h1>
+    <p>最終更新日：2025年1月1日</p>
+  </div>
+
+  <div class="doc-body">
+
+    <h2>1. はじめに</h2>
+    <p>Improve Your Life（以下「本サービス」）は、ユーザーのプライバシーを尊重し、個人情報の適切な保護に努めます。本プライバシーポリシーは、本サービスが収集する情報、その利用目的、および保護手段について説明します。本サービスを利用することで、本ポリシーに同意したものとみなします。</p>
+
+    <h2>2. 収集する情報</h2>
+    <p>本サービスは以下の情報を収集します：</p>
+    <ul>
+      <li><strong>アカウント情報：</strong>ユーザー名、表示名、メールアドレス、パスワード（bcryptによるハッシュ化）</li>
+      <li><strong>活動記録データ：</strong>筋トレ・プログラミング・読書等の記録内容、日時、メモ、数値データ</li>
+      <li><strong>目標・Todoデータ：</strong>設定した目標、Todoタスク、完了ステータス</li>
+      <li><strong>ソーシャルデータ：</strong>投稿・コメント内容、いいね、フォロー・フォロワー関係</li>
+      <li><strong>LINE連携情報：</strong>LINE連携を行った場合のLINEユーザーID</li>
+      <li><strong>アクセス情報：</strong>IPアドレス、ブラウザ情報（セキュリティ目的）</li>
+    </ul>
+
+    <h2>3. 情報の利用目的</h2>
+    <p>収集した情報は以下の目的のみに使用します：</p>
+    <ul>
+      <li>サービスの提供・運営・改善</li>
+      <li>プッシュ通知・いいね・コメント・メンション通知の送信</li>
+      <li>AIによる目標マッチング機能の実行</li>
+      <li>不正アクセス・不正利用の検出と防止</li>
+      <li>お問い合わせへの対応</li>
+      <li>統計データの集計（個人を特定しない形式）</li>
+    </ul>
+
+    <h2>4. 情報の第三者提供</h2>
+    <p>本サービスは、以下の場合を除き、ユーザーの個人情報を第三者に提供・販売しません：</p>
+    <ul>
+      <li>ユーザー本人の同意がある場合</li>
+      <li>法令・裁判所・行政機関の命令に基づく場合</li>
+      <li>人の生命・身体・財産の保護のために必要な場合</li>
+    </ul>
+
+    <h2>5. 利用する外部サービス</h2>
+    <p>本サービスは以下の外部サービスを利用しています。各サービスのプライバシーポリシーが適用される場合があります：</p>
+    <ul>
+      <li><strong>Amazon Web Services (DynamoDB)：</strong>データの保存・管理</li>
+      <li><strong>Anthropic Claude API：</strong>AIゴールマッチング機能</li>
+      <li><strong>LINE Messaging API：</strong>LINE連携・通知機能</li>
+      <li><strong>Google AdSense：</strong>広告配信（Cookieによる行動ターゲティング広告が含まれる場合があります）</li>
+      <li><strong>Vercel / Railway：</strong>アプリのホスティング</li>
+    </ul>
+
+    <h2>6. Cookieとローカルストレージ</h2>
+    <p>本サービスはブラウザのローカルストレージを使用して、ログインセッション情報・カレンダーURL・Todo完了状況等をクライアント側に保存します。これらのデータはサーバーには自動送信されません。</p>
+    <p>Google AdSenseはCookieを使用して広告を配信することがあります。ブラウザの設定でCookieを無効にすることができますが、一部機能に影響が出る場合があります。</p>
+
+    <h2>7. データの保存・セキュリティ</h2>
+    <p>データはAWS東京リージョン（ap-northeast-1）に保存されます。セキュリティ対策として以下を実施しています：</p>
+    <ul>
+      <li>パスワードのbcryptハッシュ化</li>
+      <li>HTTPS（TLS）による通信暗号化</li>
+      <li>JWTによる認証トークン管理</li>
+      <li>レートリミットによる不正アクセス防止</li>
+      <li>セキュリティヘッダー（helmet）の適用</li>
+    </ul>
+
+    <h2>8. データの保存期間・削除</h2>
+    <p>アカウントは明示的に削除されるまで保持されます。アカウントの削除をご希望の場合は、<a href="contact.html">お問い合わせページ</a>よりご連絡ください。削除後、データは速やかに消去されます（バックアップからの完全削除には最大30日かかる場合があります）。</p>
+
+    <h2>9. 未成年者の利用</h2>
+    <p>本サービスは13歳未満の方の利用を対象としていません。13歳未満の方が登録されていることが判明した場合、アカウントを削除することがあります。</p>
+
+    <h2>10. ポリシーの変更</h2>
+    <p>本ポリシーは必要に応じて改定することがあります。重要な変更がある場合は、アプリ内またはこのページで事前にお知らせします。変更後も本サービスを継続して使用することで、変更後のポリシーに同意したものとみなします。</p>
+
+    <h2>11. お問い合わせ</h2>
+    <p>プライバシーに関するご質問・削除依頼等は<a href="contact.html">お問い合わせページ</a>よりご連絡ください。</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">✨ Improve Your Life</div>
+        <p>毎日の習慣で人生を変える。<br>無料の習慣トラッカーアプリ。</p>
+      </div>
+      <div class="footer-col"><h4>ページ</h4><ul><li><a href="index.html">ホーム</a></li><li><a href="about.html">開発者</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></div>
+      <div class="footer-col"><h4>法的情報</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="terms.html">利用規約</a></li></ul></div>
+      <div class="footer-col"><h4>アプリ</h4><ul><li><a href="https://daily-tracker-ecru.vercel.app" target="_blank" rel="noopener">アプリを開く →</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Improve Your Life. All rights reserved.</p>
+      <p><a href="privacy.html">プライバシーポリシー</a> · <a href="terms.html">利用規約</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navMenu').classList.toggle('open'));</script>
+</body>
+</html>
