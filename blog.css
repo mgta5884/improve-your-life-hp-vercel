@@ -1,0 +1,255 @@
+/* ==========================================
+   Blog Article Layout
+   ========================================== */
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  align-items: start;
+}
+
+.article-main {
+  min-width: 0;
+}
+
+.article-header {
+  margin-bottom: 28px;
+}
+
+.article-title {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--text);
+  margin: 12px 0 10px;
+}
+
+.article-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.article-body {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+.article-body h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 36px 0 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
+  color: var(--text);
+}
+
+.article-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 8px;
+  color: var(--text);
+}
+
+.article-body p {
+  margin-bottom: 16px;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.article-body li {
+  margin-bottom: 8px;
+}
+
+.article-body strong {
+  color: var(--accent);
+}
+
+.article-cta {
+  margin-top: 48px;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, var(--surface2), var(--surface));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.article-cta h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.article-cta p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* ==========================================
+   Aside / Sidebar
+   ========================================== */
+
+.article-aside {
+  position: sticky;
+  top: 80px;
+}
+
+.aside-widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.aside-widget h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.aside-widget a {
+  color: var(--accent2, var(--accent));
+  text-decoration: none;
+}
+
+.aside-widget a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   Blog Index Page
+   ========================================== */
+
+.blog-hero {
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.blog-hero h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.blog-hero p {
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.blog-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 7px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding-bottom: 60px;
+}
+
+.blog-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  border-color: var(--accent);
+}
+
+.blog-card-category {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.blog-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.blog-card-excerpt {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.blog-card-meta {
+  font-size: 12px;
+  color: var(--muted);
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+}
+
+/* ==========================================
+   Responsive
+   ========================================== */
+
+@media (max-width: 768px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+    padding-top: 24px;
+    gap: 24px;
+  }
+
+  .article-aside {
+    position: static;
+  }
+
+  .article-body h2 {
+    font-size: 17px;
+  }
+
+  .article-cta {
+    padding: 20px;
+  }
+}
