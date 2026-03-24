@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHubの使い方入門：初心者が最初に知るべき基本操作 | Improve Your Life</title>
+  <meta name="description" content="GitHubの基本操作を初心者向けに解説。リポジトリ作成・コミット・プッシュ・プルリクエストの流れを丁寧に説明。プログラミング学習にGitHubが必要な理由も解説します。">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../blog.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068427454150656" crossorigin="anonymous"></script>
+</head>
+<body>
+<header id="header">
+  <div class="nav">
+    <a href="../index.html" class="nav-logo">✨ Improve Your Life</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニュー">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="../index.html">ホーム</a>
+      <a href="../blog/index.html" class="active">ブログ</a>
+      <a href="../about.html">開発者</a>
+      <a href="../privacy.html">プライバシー</a>
+      <a href="../contact.html">お問い合わせ</a>
+      <a href="https://daily-tracker-ecru.vercel.app" class="nav-cta" target="_blank" rel="noopener noreferrer">アプリを開く →</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-layout container">
+  <main class="article-main">
+    <div class="article-header">
+      <span class="chip">💻 プログラミング</span>
+      <h1 class="article-title">GitHubの使い方入門：初心者が最初に知るべき基本操作</h1>
+      <div class="article-meta">
+        <span>📅 2026年3月24日</span>
+        <span>⏱ 読了約7分</span>
+      </div>
+    </div>
+
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2068427454150656" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <div class="article-body">
+      <p>プログラミングを学んでいる多くの初心者が「GitHubって何に使うの？」「難しそうで後回しにしている」と感じています。しかしGitHubは、プログラミングを学ぶ上で早めに身につけておくべき非常に重要なツールです。この記事では、GitHubとは何か、なぜ必要なのか、そして基本的な使い方の流れを初心者でもわかるように解説します。</p>
+
+      <h2>GitとGitHubの違い</h2>
+      <p>まず混同されがちな「Git」と「GitHub」の違いを整理します。</p>
+      <ul>
+        <li><strong>Git</strong>：ファイルの変更履歴を管理する「バージョン管理システム」のソフトウェア。自分のパソコン上で動作する</li>
+        <li><strong>GitHub</strong>：Gitで管理したコードをインターネット上に保存・共有できるクラウドサービス（プラットフォーム）</li>
+      </ul>
+      <p>簡単に言うと、Gitは「コードの変更を記録するツール」、GitHubは「Gitで記録したコードをオンラインに保存・共有する場所」です。</p>
+
+      <h2>GitHubが必要な3つの理由</h2>
+
+      <h3>理由1：コードの安全なバックアップ</h3>
+      <p>せっかく作ったコードが、パソコンの故障や誤操作で消えてしまったら大変です。GitHubにコードをアップロード（プッシュ）しておくことで、いつでも復元できる安全なバックアップになります。「あの変更を元に戻したい」というときも、Gitの履歴機能で任意の時点に戻せます。</p>
+
+      <h3>理由2：ポートフォリオとして機能する</h3>
+      <p>エンジニアの採用・フリーランス案件の受注において、GitHubのプロフィールはいわば「技術的な履歴書」として機能します。自分が作ったアプリ・書いたコードをGitHubで公開することで、採用担当者やクライアントが実際のスキルを確認できます。</p>
+
+      <h3>理由3：チーム開発に不可欠</h3>
+      <p>現実のソフトウェア開発は複数人でチームを組んで行います。Gitのブランチ機能とGitHubのプルリクエスト機能を使うことで、複数の開発者が同じコードベースに並行して変更を加え、レビューを経て統合するワークフローを実現できます。</p>
+
+      <h2>GitHubアカウント作成から最初のリポジトリまで</h2>
+
+      <h3>Step 1：GitHubアカウントを作成する</h3>
+      <p>github.comにアクセスして「Sign up」からアカウントを作成します。メールアドレス・パスワード・ユーザー名を設定するだけで無料アカウントを作れます。公開リポジトリは無制限で作成でき、プライベートリポジトリも無料で利用できます。</p>
+
+      <h3>Step 2：Gitをパソコンにインストールする</h3>
+      <p>git-scm.comからGitをダウンロードしてインストールします。インストール後、ターミナル（コマンドプロンプト）で「git --version」と入力してバージョンが表示されればインストール成功です。</p>
+
+      <h3>Step 3：リポジトリを作成する</h3>
+      <p>GitHubにログインして「New repository」ボタンをクリックし、リポジトリ名・説明・公開/非公開を設定して作成します。「リポジトリ（Repository）」とは、プロジェクトのファイルと変更履歴をまとめて管理するフォルダのようなものです。</p>
+
+      <h3>Step 4：ローカルリポジトリと連携する</h3>
+      <p>パソコン上のプロジェクトフォルダで以下のコマンドを実行します。</p>
+      <ul>
+        <li><code>git init</code>：フォルダをGitで管理する初期化</li>
+        <li><code>git add .</code>：変更ファイルをステージング（コミット準備）</li>
+        <li><code>git commit -m "最初のコミット"</code>：変更をスナップショットとして保存</li>
+        <li><code>git remote add origin [リポジトリURL]</code>：GitHubと連携</li>
+        <li><code>git push -u origin main</code>：GitHubにアップロード</li>
+      </ul>
+
+      <h2>基本的なGitワークフロー</h2>
+      <p>日常的なGitの使い方は以下のサイクルで行います。</p>
+      <ol>
+        <li><strong>コードを変更する</strong>（ファイルの編集・追加・削除）</li>
+        <li><strong>git add [ファイル名]</strong>：変更をステージングエリアに追加</li>
+        <li><strong>git commit -m "変更内容を説明するメッセージ"</strong>：ローカルに変更を記録</li>
+        <li><strong>git push</strong>：GitHubに変更をアップロード</li>
+      </ol>
+      <p>このサイクルを繰り返すことで、コードの変更履歴が積み重なっていきます。GitHubのページでは、いつ・誰が・何を変更したかをグラフィカルに確認できます。</p>
+
+      <h2>知っておきたいGitの重要コマンド</h2>
+      <ul>
+        <li><code>git status</code>：現在の変更状況を確認</li>
+        <li><code>git log</code>：コミット履歴の確認</li>
+        <li><code>git diff</code>：変更内容の差分を確認</li>
+        <li><code>git branch [ブランチ名]</code>：新しいブランチを作成</li>
+        <li><code>git checkout [ブランチ名]</code>：ブランチを切り替え</li>
+        <li><code>git pull</code>：リモートの変更をローカルに取得</li>
+        <li><code>git clone [URL]</code>：リモートリポジトリをローカルにコピー</li>
+      </ul>
+
+      <h2>GitHubを習慣的に使うコツ</h2>
+      <p>GitHubのプロフィールページには「コントリビューショングラフ」という草（緑のマス）が表示されます。コミットした日が緑になるこのグラフは、継続的な開発活動の視覚的な証拠となります。毎日少しでもコードを書いてコミットする習慣をつけることで、このグラフが埋まっていき、採用担当者へのアピールにもなります。</p>
+      <p>プログラミング学習の記録と組み合わせて、Improve Your Lifeのアプリで「GitHubコミット」を毎日の習慣として記録することも、継続の仕組み作りに効果的です。</p>
+
+      <h2>まとめ：GitHubは早めに慣れておく価値がある</h2>
+      <p>最初はコマンドに戸惑うかもしれませんが、GitHubは一度慣れてしまえば開発効率を大きく高める強力なツールです。プログラミング学習の早い段階からGitを使う習慣をつけることで、実務的なスキルを自然に身につけられます。今すぐGitHubアカウントを作成して、最初のリポジトリを作ってみましょう。</p>
+    </div>
+
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2068427454150656" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <div class="article-cta">
+      <h3>習慣を記録して、人生を変えよう</h3>
+      <p>Improve Your Lifeなら、GitHubコミットをはじめとするプログラミング習慣を毎日記録できます。</p>
+      <a href="https://daily-tracker-ecru.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">▶ 無料で始める</a>
+    </div>
+
+    <div style="margin-top:40px; padding-top:24px; border-top:1px solid var(--border);">
+      <a href="index.html" style="color:var(--accent2);">← ブログ一覧へ戻る</a>
+    </div>
+  </main>
+
+  <aside class="article-aside">
+    <div class="aside-widget">
+      <h4>アプリで習慣を管理</h4>
+      <p style="font-size:13px; margin-bottom:12px;">記録・ヒートマップ・AIコーチで継続をサポート</p>
+      <a href="https://daily-tracker-ecru.vercel.app" class="btn btn-primary" style="width:100%;justify-content:center;font-size:13px;padding:11px 16px;" target="_blank">アプリを開く →</a>
+    </div>
+    <div class="aside-widget" style="margin-top:20px;">
+      <h4>関連記事</h4>
+      <ul style="list-style:none;padding:0;">
+        <li style="margin-bottom:8px;"><a href="html-css-beginner.html" style="font-size:13px;">HTML・CSSを独学で学ぶ方法</a></li>
+        <li style="margin-bottom:8px;"><a href="javascript-basics.html" style="font-size:13px;">JavaScriptで何ができるか初心者向け解説</a></li>
+        <li><a href="programming-roadmap.html" style="font-size:13px;">初心者におすすめのプログラミング学習ロードマップ</a></li>
+      </ul>
+    </div>
+    <div style="margin-top:20px;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2068427454150656" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">✨ Improve Your Life</div>
+        <p>毎日の習慣で人生を変える。<br>無料の習慣トラッカーアプリ。</p>
+      </div>
+      <div class="footer-col">
+        <h4>ページ</h4>
+        <ul>
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="index.html">ブログ</a></li>
+          <li><a href="../about.html">開発者について</a></li>
+          <li><a href="../contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>法的情報</h4>
+        <ul>
+          <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          <li><a href="../terms.html">利用規約</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Improve Your Life. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navMenu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
